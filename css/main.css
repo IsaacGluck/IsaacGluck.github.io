@@ -111,9 +111,6 @@ a, a:visited, a:focus, a:active, a:hover, :focus{
     border: none !important;
 }
 
-/*:focus {outline:none;}*/
-/*::-moz-focus-inner {border:0;}*/
-
 .under {
     font-family: "BebasNeue", sans-serif;
     font-size: 100px;
