@@ -102,12 +102,15 @@ nav {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #bdc3c7;
-  background-color: transparent;
-  outline: none !important;
-  border: none !important;
+  background-color: transparent;  
 }
 
 /* Get rid of Firefox ugly focus borders */
+a, a:visited, a:focus, a:active, a:hover, :focus{
+    outline:0 none !important;
+    border: none !important;
+}
+
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 
