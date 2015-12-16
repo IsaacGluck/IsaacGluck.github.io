@@ -103,7 +103,7 @@ nav {
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #bdc3c7;
   background-color: transparent;
-  border: none;
+  outline: none !important;
 }
 
 .under {
