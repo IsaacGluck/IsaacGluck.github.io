@@ -104,7 +104,12 @@ nav {
   color: #bdc3c7;
   background-color: transparent;
   outline: none !important;
+  border: none !important;
 }
+
+/* Get rid of Firefox ugly focus borders */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
 
 .under {
     font-family: "BebasNeue", sans-serif;
