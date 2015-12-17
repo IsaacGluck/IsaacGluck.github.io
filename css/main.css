@@ -219,6 +219,7 @@ a.back-to-top {
 .footer{
     background-color: #222;
     font-size: 14px;
+    color: #bdc3c7;
 }
 
 @media(min-width:767px) {
