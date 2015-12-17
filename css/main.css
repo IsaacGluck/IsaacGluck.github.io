@@ -216,6 +216,11 @@ a.back-to-top {
     background: rgba(0, 0, 0, .5) url("../img/arrow.png") no-repeat center 43%;
 }
 
+.footer{
+    background-color: #222;
+    font-size: 14px;
+}
+
 @media(min-width:767px) {
     .under {
         font-family: "BebasNeue", sans-serif;
