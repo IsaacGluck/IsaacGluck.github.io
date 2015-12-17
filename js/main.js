@@ -22,6 +22,13 @@ $("document").ready(function($) {
 	    	return false;
 		});
 
+		$("#Home-Link").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("body").offset().top
+	    	}, 1500);
+	    	return false;
+		});
+
 		$("#About-Link").click(function() {
 	    	$('body').animate({
 	        	scrollTop: $("#About").offset().top
