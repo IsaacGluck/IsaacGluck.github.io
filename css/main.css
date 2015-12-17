@@ -61,9 +61,69 @@ textarea {
     src: url("../font/BebasNeue Bold.ttf");
 }
 
+body {
+    height: 100%;
+    background-color: #27ae60;
+}
+
+.parallax-window{
+    background: transparent;
+}
+
+#home-image{
+    background-image: url("../img/city-dark.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#about-image{
+    background-image: url("../img/blur.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#portfolio-image{
+    background-image: url("../img/trees-grad.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#Home {
+    padding-top: 150px;
+}
+
+#About {
+    padding-top: 75px;
+    background: #2980b9;
+    color: #333;
+}
+
+#Portfolio {
+    padding-top: 75px;
+    background: #e67e22;
+}
+
+#Contact {
+    padding-top: 75px;
+    background: #27ae60;
+}
+
 .navbar-brand {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+}
+
+.navbar-logo {
+    border-radius: 5px 20px 5px;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px !important;
+    float:left;
+    padding: 15px 5px 0px 4px;
+    line-height: 20px;
+    height: 52px;
+    width: 52px;
 }
 
 ul.nav {
@@ -72,8 +132,7 @@ ul.nav {
 }
 
 nav {
-    /*background: #333 !important;*/
-    padding: 5px !important;
+    padding: 2px !important;
 }
 
 /* Fix minor Spacing */
@@ -102,21 +161,7 @@ nav {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #bdc3c7;
-  background-color: transparent;  
-}
-
-/* Get rid of Firefox ugly focus borders */
-a, a:visited, a:focus, a:active, a:hover, :focus{
-    outline:0 none !important;
-    border: none !important;
-}
-
-.under {
-    font-family: "BebasNeue", sans-serif;
-    font-size: 100px;
-    color: white;
-    color: #bdc3c7;
-    padding-left: 30px; 
+  background-color: transparent;
 }
 
 .green {
@@ -172,24 +217,35 @@ a.back-to-top {
 }
 
 @media(min-width:767px) {
+    .under {
+        font-family: "BebasNeue", sans-serif;
+        font-size: 100px;
+        color: white;
+        color: #bdc3c7;
+        padding-left: 30px; 
+    }
 
-    .tran {
+    .transparent {
         background-color: rgba(0, 0, 0, 0.2) !important;
+        /*border-bottom: 1px solid white;*/
         border: none;
         padding: 10px !important;
     }
 
-    .big-brand {
-        font-size: 40px !important;
+    .toggle-drop {
+        font-size: 20px !important;
     }
 
-    .big-link {
-        font-size: 20px !important;
+    .navbar {
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
     }
 
     .navbar-brand {
         font-family: 'Oswald', sans-serif;
-        font-size: 30px;
+        font-size: 40px !important;
+        padding-left: 25px;
     }
 
     ul.nav {
@@ -197,8 +253,6 @@ a.back-to-top {
         font-size: 20px;
     }
 }
-
-
 
 
 /* ==========================================================================

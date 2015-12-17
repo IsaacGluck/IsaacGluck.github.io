@@ -1,29 +1,55 @@
+// Reload page at the top
+window.onbeforeunload = function(){ window.scrollTo(0,0); }
+
 $("document").ready(function($) {
 
-	function sectionSize() {
-		var sections = [".home-section", ".about-section", ".portfolio-section", ".contact-section"];
-	    var size = $(window).height();
-	    sections.forEach(function(element) {
-	    	$(element).css('height', size);
-	    });
-	};
-
-	sectionSize();
-
-	//jQuery for page scrolling feature - requires jQuery Easing plugin
-	$(function() {
-		$('a.page-scroll').bind('click', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 2000, 'easeInOutCubic');
-			event.preventDefault();
-		});
+	$(function sectionSize() {
+	    $(".full").css('height', $(window).height());
 	});
 
-	$('body').scrollspy({
-    	target: '.navbar-fixed-top'
+	//initialise Stellar.js
+    $(window).stellar({
+    	// scrollProperty: 'transform',
+    	positionProperty: 'transform'
     });
+
+	$(function(){
+
+		$(".big-brand").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("body").offset().top
+	    	}, 1500);
+	    	return false;
+		});
+
+		$("#About-Link").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("#About").offset().top
+	    	}, 1500);
+	    	return false;
+		});
+
+		$("#Portfolio-Link").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("#Portfolio").offset().top
+	    	}, 1500);
+	    	return false;
+		});
+
+		$("#Contact-Link").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("#Contact").offset().top
+	    	}, 1500);
+	    	return false;
+		});
+
+		$(".back-to-top").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("body").offset().top
+	    	}, 2000);
+	    	return false;
+		});
+	});
 
 	// Determines the heights of the parralax image panels
 	$(function(){
@@ -31,19 +57,20 @@ $("document").ready(function($) {
 			$('#ios-notice').removeClass('hidden');
 			$('.parallax-container.break').height( $(window).height() * 0.4 | 0 );
 		} else {
-			$('.parallax-container.break').height(500);
+			
+			$('.parallax-window.low').height(500);
 		}
 	});
 
-	// On large devices, starts the nav transparency, & scroll to top button
+	// On large devices, starts the nav, transparent & Scroll to top button
 	var amountScrolled = 300;
 
 	$(function(){
 		$(document).scroll(function() {
     		if ($(document).scrollTop() > $(document).height()/20) {
-    			$("nav").removeClass('tran');
+    			$("nav").removeClass('transparent');
     		} else {
-    			$("nav").addClass('tran');
+    			$("nav").addClass('transparent');
     		}
 
 	    	if ( $(window).scrollTop() > amountScrolled ) {
@@ -57,11 +84,13 @@ $("document").ready(function($) {
 
 
 	// Looks better on phones when you click on a nav item, the drop down disappears
-	$(".toggle-drop").click(function() {
-		$("#isaac-nav").toggleClass("in");
-	});
+	$(function(){
+		$(".toggle-drop").click(function() {
+			$("#isaac-nav").toggleClass("in");
+		});
 
-	$(".big-brand").click(function() {
-		$("#isaac-nav").removeClass("in");
+		$(".big-brand").click(function() {
+			$("#isaac-nav").removeClass("in");
+		});
 	});
 });
