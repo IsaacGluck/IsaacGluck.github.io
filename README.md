@@ -1,6 +1,6 @@
 IsaacGluck.github.io
 ====================
 
-testing
+My personal website.
 
 http://IsaacGluck.github.io
