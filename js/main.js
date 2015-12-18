@@ -5,6 +5,7 @@ $("document").ready(function($) {
 
 	$(function sectionSize() {
 	    $(".full").css('height', $(window).height());
+	    $(".full").css('min-height', '700px');
 	});
 
 	//initialise Stellar.js

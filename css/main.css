@@ -302,6 +302,12 @@ input:focus, textarea:focus {
     padding-top: 10px;
 }
 
+.notifyjs-bootstrap-error {
+    background-image: none !important;
+    padding: 8px 15px 8px 15px !important;
+    border-radius: 0 !important;
+}
+
 @media(min-width:767px) {
     .under {
         font-family: "BebasNeue", sans-serif;
