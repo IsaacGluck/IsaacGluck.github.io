@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -80,8 +81,11 @@
           <div class="col-md-6">
             <h1 class="header">About</h1>
             <p class="content">
-              Hi, I'm Isaac.
+              Hi, I'm Isaac, Dartmouth College '19 and Stuyvesant High School '15.
             </p>
+            <div class="social">
+              
+            </div>
           </div>        
         </div>
       </div>
@@ -114,8 +118,7 @@
             <div class="col-md-4">
               <h1 class="header text-center">Contact</h1>
               <!-- website@igluck.33mail.com -->
-              <form class="horizontal-form" action="http://formspree.io/isaacbgluck@gmail.com"
-      method="POST"> 
+              <form class="horizontal-form" action="http://formspree.io/isaacbgluck@gmail.com" method="POST" id="contact-form"> 
               	<div class="form-group">
               		<input type="text" class="wide" id="First" name="first" placeholder="First Name" data-validate="required">
           		</div>
@@ -129,7 +132,7 @@
               		<input type="text" class="wide" id="Email" name="_replyto" data-validate="required,email,max(100)"placeholder="Example@Provider.com">
           		</div>
           		<div class="form-group">
-          			<textarea class="wide" rows="6" id="Message" placeholder="Type your message here." data-validate="required"></textarea>
+          			<textarea class="wide" rows="6" id="Message" name="content" placeholder="Type your message here." form="contact-form" data-validate="required"></textarea>
           		</div>
           		<input class="hidden" name="_subject" value="Website Contact">
           		<input class="hidden" type="text" name="_gotcha"/>
@@ -161,7 +164,7 @@
     <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+
     <script src="js/main.js"></script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
