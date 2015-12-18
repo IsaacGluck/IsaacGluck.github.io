@@ -78,8 +78,8 @@
           <div class="col-md-6">
           </div>
           <div class="col-md-6">
-            <h1 class="about-header">About</h1>
-            <p class="about">
+            <h1 class="header">About</h1>
+            <p class="content">
               Hi, I'm Isaac.
             </p>
           </div>        
@@ -94,8 +94,8 @@
       <div class="container-fluid" >
         <div class="row">
           <div class="col-md-6">
-            <h1 class="about-header">Portfolio</h1>
-            <p class="about">
+            <h1 class="header">Portfolio</h1>
+            <p class="content">
               This will be a portfolio.
             </p>
           </div>       
@@ -110,12 +110,27 @@
       <div class="container-fluid" >
         <div class="row">
           <div class="col-md-12">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-              <h1 class="about-header">Contact</h1>
-              <p class="about">
-                This will be a contact section.
-              </p>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h1 class="header text-center">Contact</h1>
+              <form class="horizontal-form" method="post">
+              	<div class="form-group">
+              		<input type="text" class="wide" id="First" name="first" placeholder="First Name" required>
+          		</div>
+          		<div class="form-group">
+          			<input type="text" class="wide" id="Last" name="last" placeholder="Last Name" required>
+          		</div>
+          		<div class="form-group">
+              		<input type="text" class="wide" id="Company" name="company" placeholder="Company">
+          		</div>
+          		<div class="form-group">
+              		<input type="text" class="wide" id="Email" name="email" placeholder="Example@Provider.com" required>
+          		</div>
+          		<div class="form-group">
+          			<textarea class="wide" rows="6" id="Message" placeholder="Type your message here." required></textarea>
+          		</div>
+          		<button class="submit">Send</button>
+              </form>
             </div>  
           </div>        
         </div>
@@ -128,9 +143,9 @@
     
     <!-- Footer -->
     <div class="row footer">
-    	<div class="col-md-1"></div>
-    	<div class="col-md-11">
-    		<p>&copy; 2015 Isaac Gluck</p>
+    	<div class="col-md-4"></div>
+    	<div class="col-md-4">
+    		<p class="text-center">&copy; 2015 Isaac Gluck</p>
     	</div>
     </div>
 
