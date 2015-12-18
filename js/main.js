@@ -6,11 +6,11 @@ $("document").ready(function($) {
 	$(function sectionSize() {
 	    $(".full").css('height', $(window).height());
 	    $(".full").css('min-height', '700px');
+	    $("#Contact").css('min-height', '750px');
 	});
 
 	//initialise Stellar.js
     $(window).stellar({
-    	// scrollProperty: 'transform',
     	positionProperty: 'transform'
     });
 

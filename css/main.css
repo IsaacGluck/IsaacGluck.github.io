@@ -74,6 +74,8 @@ body {
     background-image: url("../img/city-dark.jpg");
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px !important; 
 }
 
 #about-image{
