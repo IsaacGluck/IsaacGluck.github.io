@@ -113,7 +113,9 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
               <h1 class="header text-center">Contact</h1>
-              <form class="horizontal-form" action="MAILTO:website@igluck.33mail.com" method="post">
+              <!-- website@igluck.33mail.com -->
+              <form class="horizontal-form" action="http://formspree.io/isaacbgluck@gmail.com"
+      method="POST"> 
               	<div class="form-group">
               		<input type="text" class="wide" id="First" name="first" placeholder="First Name" required>
           		</div>
@@ -124,12 +126,15 @@
               		<input type="text" class="wide" id="Company" name="company" placeholder="Company">
           		</div>
           		<div class="form-group">
-              		<input type="text" class="wide" id="Email" name="email" placeholder="Example@Provider.com" required>
+              		<input type="text" class="wide" id="Email" name="_replyto" placeholder="Example@Provider.com" required>
           		</div>
           		<div class="form-group">
           			<textarea class="wide" rows="6" id="Message" placeholder="Type your message here." required></textarea>
           		</div>
-          		<button class="submit">Send</button>
+          		<input class="hidden" name="_subject" value="Website Contact">
+          		<input class="hidden" type="text" name="_gotcha"/>
+          		<input class="hidden" name="_next" value="isaacgluck.github.io" />
+          		<button class="submit" value="Send">Send</button>
               </form>
             </div>  
           </div>        
