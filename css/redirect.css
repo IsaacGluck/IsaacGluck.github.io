@@ -1,0 +1,22 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url("../font/BebasNeue Bold.ttf");
+}
+
+body {
+	background-color: #27ae60;
+}
+
+.content {
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 50px;
+	color: #333;
+	position: relative;
+	width: 450px;
+	text-align: center;
+	padding: 20px 7px 12px;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	margin-top: 10%;
+  	
+}
