@@ -11,7 +11,7 @@ $("document").ready(function($) {
 		$("#redirect").append(string);
 		if (timer==0){
 			clearInterval(refresh);
-			window.location.href = 'index.html';
+			window.location.href = 'isaacgluck.com';
 		}
 	}
 
