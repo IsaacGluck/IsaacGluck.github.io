@@ -57,6 +57,13 @@ $("document").ready(function($) {
 	    	}, 2000);
 	    	return false;
 		});
+
+		$(".fa-envelope-o").click(function() {
+	    	$('body').animate({
+	        	scrollTop: $("#Contact").offset().top
+	    	}, 2000);
+	    	return false;
+		});
 	});
 
 	// Determines the heights of the parralax image panels
