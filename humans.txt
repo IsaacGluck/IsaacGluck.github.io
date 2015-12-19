@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Chef: Isaac Gluck
+	From: New York, New York, USA
 
 # THANKS
 
-    <name>
+    Everyone who gave me feedback.
 
 # TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+	Language: English
+	Doctype: HTML5
+	IDE: Sublime Text
+    Components: HTML5, CSS3, jQuery, Modernizr, Stellar.js, Bootstrap, Boilerplate, Verify.js, Notify.js
+    
