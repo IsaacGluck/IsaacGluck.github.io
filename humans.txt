@@ -2,17 +2,17 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    Chef: Isaac Gluck
+	
+	Chef: Isaac Gluck
 	From: New York, New York, USA
 
 # THANKS
 
-    Everyone who gave me feedback.
+	Everyone who gave me feedback.
 
 # TECHNOLOGY COLOPHON
 	Language: English
 	Doctype: HTML5
 	IDE: Sublime Text
-    Components: HTML5, CSS3, jQuery, Modernizr, Stellar.js, Bootstrap, Boilerplate, Verify.js, Notify.js
+	Components: HTML5, CSS3, jQuery, Modernizr, Stellar.js, Bootstrap, Boilerplate, Verify.js, Notify.js
     
