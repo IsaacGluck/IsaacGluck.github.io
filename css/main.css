@@ -139,7 +139,7 @@ nav {
 
 /* Fix minor Spacing */
 .row {
-    margin-right: 0;
+    /*margin-right: 0;*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -194,7 +194,7 @@ nav {
 }
 
 .header {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     font-family: 'BebasNeue', sans-serif;
     font-size: 60px;
     text-decoration: underline;
