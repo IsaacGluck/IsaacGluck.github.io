@@ -5,9 +5,9 @@ $("document").ready(function($) {
 
 	$(function sectionSize() {
 	    $(".full").css('height', $(window).height());
-	    // $(".full").css('width', $(window).width());
 	    $(".full").css('min-height', '700px');
 	    $("#Contact").css('min-height', '700px');
+	    $("#Portfolio").css('min-height', '950px');
 	});
 
 	//initialise Stellar.js

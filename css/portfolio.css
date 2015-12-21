@@ -8,6 +8,7 @@
 	max-width: 400px;
 	list-style: none;
 	text-align: center;
+	margin-top: 50px;
 }
 
 /* Common style */
@@ -66,7 +67,7 @@
 .grid figure h2 {
 /*	word-spacing: -0.1em;*/
 	font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
 }
 
