@@ -1,11 +1,11 @@
 // Reload page at the top
-window.onbeforeunload = function(){ window.scrollTo(0,0); }
+// window.onbeforeunload = function(){ window.scrollTo(0,0); }
 
 $("document").ready(function($) {
 
 	$(function sectionSize() {
 	    $(".full").css('height', $(window).height());
-	    $(".full").css('width', $(window).width());
+	    // $(".full").css('width', $(window).width());
 	    $(".full").css('min-height', '700px');
 	    $("#Contact").css('min-height', '700px');
 	});
@@ -83,7 +83,7 @@ $("document").ready(function($) {
 
 	$(function(){
 		$(document).scroll(function() {
-    		if ($(document).scrollTop() > $(document).height()/20) {
+    		if ($(document).scrollTop() > $(document).height()/55) {
     			$("nav").removeClass('transparent');
     		} else {
     			$("nav").addClass('transparent');

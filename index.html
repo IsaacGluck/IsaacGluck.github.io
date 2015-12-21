@@ -9,18 +9,20 @@
     <meta name="description" content="Personal Website">
     <meta name="author" content="Isaac Gluck">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:800,600,400,300' rel='stylesheet' type='text/css'>
+
 
       <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
   </head>
@@ -76,7 +78,7 @@
     <!-- About -->
     <section id="About" class="about-section full">
       <div class="container-fluid" >
-        <div class="row">
+        <div class="row fix">
           <div class="col-md-6">
           </div>
           <div class="col-md-6">
@@ -84,12 +86,12 @@
             <p class="content">
               Hi, I'm Isaac, Dartmouth College '19 and Stuyvesant High School '15.
             </p>
-            <div class="row social">
+            <div class="row fix social">
               <div class="col-md-2">
-                <a href="https://www.linkedin.com/in/isaacgluck"><i class="fa fa-linkedin-square fa-5x"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/isaacgluck"><i class="fa fa-linkedin-square fa-5x"></i></a>
               </div>
               <div class="col-md-2">
-                <a href="https://github.com/IsaacGluck"><i class="fa fa-github-square fa-5x"></i></a>
+                <a target="_blank" href="https://github.com/IsaacGluck"><i class="fa fa-github-square fa-5x"></i></a>
               </div>
               <div class="col-md-2">
                 <a href="#Contact"><i class="fa fa-envelope-o fa-5x"></i></a>
@@ -105,26 +107,53 @@
     <!-- Portfolio -->
     <section id="Portfolio" class="portfolio-section full">
       <div class="container-fluid" >
-        <div class="row">
+        <div class="row fix">
           <div class="col-md-12">
-            <h1 class="header text-center">Portfolio</h1>
+            <h1 class="header text-center">Portfolio</h1><br>
           </div>
           <div class="col-md-4">
-            <div class="content">
-              Code for this website
+            <div class="grid">
+              <figure class="effect-zoe">
+                <img src="img/logo.jpg" alt="Logo"/>
+                <figcaption>
+                  <h2>Personal Site</h2>
+                    <p class="icon-links">
+                      <a target="_blank" href="https://github.com/IsaacGluck/IsaacGluck.github.io"><span class="icon-github"></span></a>
+                      <a data-toggle="modal" data-target=".this-website"><span class="icon-expand"></span></a>
+                    </p>
+                </figcaption>     
+              </figure>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="content">
-              Darby Website
+            <div class="grid">
+              <figure class="effect-zoe">
+                <img src="img/darby.jpg" alt="Darby"/>
+                <figcaption>
+                  <h2>Darby Doomsday</h2>
+                    <p class="icon-links">
+                      <a target="_blank" href="http://www.ernesthebert.com/"><span class="icon-world"></span></a>
+                      <a data-toggle="modal" data-target=".this-darby"><span class="icon-expand"></span></a>
+                    </p>
+                </figcaption>     
+              </figure>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="content">
-              Pacman
+            <div class="grid">
+              <figure class="effect-zoe">
+                <img src="img/pacman.jpg" height="300" width="400" alt="img25"/>
+                <figcaption>
+                  <h2>Pacman Replica</h2>
+                    <p class="icon-links">
+                      <a target="_blank" href="https://github.com/IsaacGluck/pacman-project"><span class="icon-github"></span></a>
+                      <a data-toggle="modal" data-target=".this-pacman"><span class="icon-expand"></span></a>
+                    </p>
+                </figcaption>     
+              </figure>
             </div>
           </div>
-          <div class="col-md-4">
+          <!-- <div class="col-md-4">
             <div class="content">
               Yahoo Finance
             </div>
@@ -138,17 +167,97 @@
             <div class="content">
               Codepen Free Code Camp
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
+
+    <!-- Modals -->
+    <div class="modal fade this-website" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="text-center">Personal Website (aka this one)</span>
+          </div>
+          <div class="modal-body">
+            <div class="row fix">
+                <div class="col-md-12">
+                  <div class="content content-modal">
+                    I built this website using <a target="_blank" href="https://html5boilerplate.com/">HTML5 Boilerplate</a>, <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a> and <a target="_blank" href="https://jquery.com/">jQuery</a>. I also used Stellar.js for the parallax feature, and <a target="_blank" href="http://verifyjs.com/">Verify.js</a> and <a target="_blank" href="https://notifyjs.com/">Notify.js</a> for the form. For the portfolio picture hover effects I used some neat ideas from <a target="_blank" href="http://tympanus.net/codrops/">Codedrops</a>.
+                    <br><br>
+                    Thanks so much for checking it out!
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade this-darby" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="text-center">Darby Doomsday Website</span>
+          </div>
+          <div class="modal-body">
+            <div class="row fix">
+                <div class="col-md-12">
+                  <div class="content content-modal">
+                    The Darby Doomsday website is a partner website to the Darby Doomsday book series written by Professor Ernest Hebert. The website contains sneak peeks to the books, a gallery of artwork pertaining to the series, an interactive map, and sections where the author can share blog posts, essays, and poems.
+                    <br><br>
+                    I helped to develop the website with a team from the <a target="_blank" href="http://dali.dartmouth.edu/">Digital Arts, Leadership, &amp; Innovation Lab</a>. I worked on the gallery section, the interactive map, and mobile compatibility.
+                    <br><br>
+                    Hope you enjoy it!
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade this-pacman" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="text-center">Pacman Replica</span>
+          </div>
+          <div class="modal-body">
+            <div class="row fix">
+                <div class="col-md-12">
+                  <div class="content content-modal">
+                    I created a Pacman replica application using Java and the <a href="https://docs.oracle.com/javase/tutorial/uiswing/start/index.404.html">Swing</a> library. I had a lot of fun making a system so that the user can add levels with txt files if they wish.
+                    <br><br>
+                    <img src="img/pacman-screenshot.png" width="400px" class="img-responsive center-block">
+                    <br>
+                    Download the jar <a href="https://www.dropbox.com/sh/cu2sphjr6zkodre/AAAKezgyYh8GlGgLz5H8Ay-ca/pacman.jar?dl=0">here</a>.
+                    <br>
+                    See the code and how to add levels <a href="https://github.com/IsaacGluck/pacman-project">here</a>.
+                    <br><br>
+                    Good luck not getting eaten!
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
 
     <div class="parallax-window low" id="portfolio-image" data-stellar-background-ratio="0.7"></div>
 
     <!-- Contact -->
     <section id="Contact" class="contact-section full">
       <div class="container-fluid" >
-        <div class="row">
+        <div class="row fix">
           <div class="col-md-12">
             <div class="col-md-4"></div>
             <div class="col-md-4">
