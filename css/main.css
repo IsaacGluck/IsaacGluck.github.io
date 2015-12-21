@@ -374,8 +374,7 @@ input:focus, textarea:focus {
     .under {
         font-family: "BebasNeue", sans-serif;
         font-size: 100px;
-        color: white;
-        /*color: #bdc3c7;*/
+        color: #bdc3c7;
         padding-left: 30px; 
     }
 
