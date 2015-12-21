@@ -88,6 +88,7 @@ body {
     background-image: url("../img/trees-grad.jpg");
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 figure {
