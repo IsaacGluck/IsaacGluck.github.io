@@ -1,5 +1,8 @@
 /* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
 
+.modal-content {
+	border-radius: 0;
+}
 
 .grid {
 	position: relative;
@@ -27,7 +30,7 @@
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
+	/*min-height: 100%;*/
 	max-width: 100%;
 	/*opacity: 0.8;*/
 }
