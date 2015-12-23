@@ -84,16 +84,19 @@ figure {
     padding-top: 75px;
     background: #3498db;
     color: #333;
+    position: relative;
 }
 
 #Portfolio {
     padding-top: 75px;
     background: #f39c12;
+    position: relative;
 }
 
 #Contact {
     padding-top: 75px;
     background: #27ae60;
+    position: relative;
 }
 
 .navbar-brand {

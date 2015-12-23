@@ -19,49 +19,49 @@ $("document").ready(function($) {
 	$(function(){
 
 		$(".big-brand").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("body").offset().top
 	    	}, 1500);
 	    	return false;
 		});
 
 		$("#Home-Link").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("body").offset().top
 	    	}, 1500);
 	    	return false;
 		});
 
 		$("#About-Link").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("#About").offset().top
 	    	}, 1500);
 	    	return false;
 		});
 
 		$("#Portfolio-Link").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("#Portfolio").offset().top
 	    	}, 1500);
 	    	return false;
 		});
 
 		$("#Contact-Link").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("#Contact").offset().top
 	    	}, 1500);
 	    	return false;
 		});
 
 		$(".back-to-top").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("body").offset().top
 	    	}, 2000);
 	    	return false;
 		});
 
 		$(".fa-envelope-o").click(function() {
-	    	$('body').animate({
+	    	$('body, html').stop().animate({
 	        	scrollTop: $("#Contact").offset().top
 	    	}, 2000);
 	    	return false;
