@@ -82,6 +82,7 @@ body {
     background-image: url("../img/blur.jpg");
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #portfolio-image{
@@ -478,7 +479,7 @@ input:focus, textarea:focus {
 }
 
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 /* ==========================================================================
