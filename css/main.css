@@ -155,25 +155,30 @@ nav {
 
 .navbar-inverse .navbar-brand {
   color: #ffffff;
+  /*color: #bdc3c7;*/
 }
 
 .navbar-inverse .navbar-brand:hover {
   color: #bdc3c7;
+  /*color: white;*/
   background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
     color: #ffffff;
+    color: #bdc3c7;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #bdc3c7;
+    color: white;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #bdc3c7;
+  color: white;
   background-color: transparent;
 }
 
