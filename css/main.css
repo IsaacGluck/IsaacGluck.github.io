@@ -228,12 +228,16 @@ nav {
     padding-right: 15px;*/
 }
 
-.fa-linkedin-square {
-    display: inline-block !important;
-    visibility: visible !important;
+.my-linkedin-square {
+    color: #333 !important;
+    margin-right: 10px;
 }
 
-.fa-envelope-o, .fa-github-square, .fa-linkedin-square {
+.my-linkedin-square:before {
+    content: "\f08c";
+}
+
+.fa-envelope-o, .fa-github-square{
     color: #333 !important;
     margin-right: 10px;
 }
@@ -242,7 +246,7 @@ nav {
     color: #f39c12 !important;
 }
 
-.fa-linkedin-square:hover {
+.my-linkedin-square:hover {
     color: #f1c40f !important;
 }
 
