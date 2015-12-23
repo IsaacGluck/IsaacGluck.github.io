@@ -10,10 +10,11 @@ $("document").ready(function($) {
 	    $("#Portfolio").css('min-height', '950px');
 	});
 
-	//initialise Stellar.js
-    $(window).stellar({
-    	positionProperty: 'transform'
-    });
+	$("#home-image").backstretch("img/city-dark.jpg");
+	$("#about-image").backstretch("img/blur.jpg");
+	$("#portfolio-image").backstretch("img/trees-grad.jpg");
+    $("img[src$='city-dark.jpg']").addClass('fixd')
+
 
 	$(function(){
 
