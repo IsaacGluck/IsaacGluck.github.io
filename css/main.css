@@ -228,6 +228,11 @@ nav {
     padding-right: 15px;*/
 }
 
+.fa-linkedin-square {
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
 .fa-envelope-o, .fa-github-square, .fa-linkedin-square {
     color: #333 !important;
     margin-right: 10px;
