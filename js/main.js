@@ -103,11 +103,13 @@ $("document").ready(function($) {
 	// Looks better on phones when you click on a nav item, the drop down disappears
 	$(function(){
 		$(".toggle-drop").click(function() {
-			$("#isaac-nav").toggleClass("in");
+			// $("#isaac-nav").toggleClass("in");
+			$('#isaac-nav').collapse('hide');
 		});
 
 		$(".big-brand").click(function() {
-			$("#isaac-nav").removeClass("in");
+			// $("#isaac-nav").removeClass("in");
+			$('#isaac-nav').collapse('hide');
 		});
 	});
 });
