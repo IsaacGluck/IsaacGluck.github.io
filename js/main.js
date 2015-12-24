@@ -3,19 +3,42 @@
 
 $("document").ready(function($) {
 
-	$(function sectionSize() {
+	// base sizing
+	$(function() {
 	    $(".full").css('height', $(window).height());
 	    $(".full").css('min-height', '700px');
 	    $("#Contact").css('min-height', '700px');
 	    $("#Portfolio").css('min-height', '950px');
 	    if ($(window).width() < 992) {
 	    	$("#Portfolio").css('height', '1600px');
+	    	$(".mobile-message").removeClass('invisible'); // make this a check for mobile/tablet
 	    }
-	    $( window ).resize(function() {
+	    if ($(window).width() > 897) {
+    		$("#under-id").removeClass('under-1 under-2').addClass('under');
+    	} else if ($(window).width() < 897 && $(window).width() > 768) {
+    		$("#under-id").removeClass('under under-2').addClass('under-1');
+    	} else if ($(window).width() < 769) {
+    		$("#under-id").removeClass('under under-1').addClass('under-2');
+    	}
+	});
+
+	// resizing
+	$(function(){
+		$( window ).resize(function() {
 			if ($(window).width() < 992) {
 	    		$("#Portfolio").css('height', '1600px');
+	    		$(".mobile-message").removeClass('invisible'); // make this a check for mobile/tablet
 	    	} else {
 	    		$("#Portfolio").css('height', $(window).height());
+	    		$(".mobile-message").addClass('invisible'); // make this a check for mobile/tablet
+	    	}
+
+	    	if ($(window).width() > 897) {
+	    		$("#under-id").removeClass('under-1 under-2').addClass('under');
+	    	} else if ($(window).width() < 897 && $(window).width() > 768) {
+	    		$("#under-id").removeClass('under under-2').addClass('under-1');
+	    	} else if ($(window).width() < 769) {
+	    		$("#under-id").removeClass('under under-1').addClass('under-2');
 	    	}
 		});
 	});

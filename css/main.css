@@ -83,7 +83,7 @@ svg {
 }
 
 #Home {
-    padding-top: 15%;
+    /*padding-top: 15%;*/
 }
 
 #About {
@@ -103,6 +103,10 @@ svg {
     padding-top: 75px;
     background: #27ae60;
     position: relative;
+}
+
+.mobile-message {
+
 }
 
 .navbar-brand {
@@ -368,17 +372,35 @@ input:focus, textarea:focus {
     border-radius: 0 !important;
 }
 
+.under {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 100px;
+    color: #bdc3c7;
+    padding-left: 30px; 
+    padding-top: 15%;
+}
+
+.under-1 {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 85px;
+    color: #bdc3c7;
+    padding-left: 30px;
+    padding-top: 25%;
+}
+
+.under-2 {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 32px;
+    color: #bdc3c7;
+    padding-left: 30px;
+    padding-top: 40%;
+}
+
 @media(min-width:767px) {
-    .under {
-        font-family: "BebasNeue", sans-serif;
-        font-size: 100px;
-        color: #bdc3c7;
-        padding-left: 30px; 
-    }
+    
 
     .transparent {
         background-color: rgba(0, 0, 0, 0.2) !important;
-        /*border-bottom: 1px solid white;*/
         border: none;
         padding: 10px !important;
     }
