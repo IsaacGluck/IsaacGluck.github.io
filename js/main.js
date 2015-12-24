@@ -8,7 +8,19 @@ $("document").ready(function($) {
 	    $(".full").css('min-height', '700px');
 	    $("#Contact").css('min-height', '700px');
 	    $("#Portfolio").css('min-height', '950px');
+	    if ($(window).width() < 992) {
+	    	$("#Portfolio").css('height', '1600px');
+	    }
+	    $( window ).resize(function() {
+			if ($(window).width() < 992) {
+	    		$("#Portfolio").css('height', '1600px');
+	    	} else {
+	    		$("#Portfolio").css('height', $(window).height());
+	    	}
+		});
 	});
+
+
 
 	$("#home-image").backstretch("img/city-dark.jpg");
 	$("#about-image").backstretch("img/blur.jpg");
@@ -72,7 +84,8 @@ $("document").ready(function($) {
 	$(function(){
 		if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
 			$('#ios-notice').removeClass('hidden');
-			$('.parallax-container.break').height( $(window).height() * 0.4 | 0 );
+			$('.parallax-window.low').height( $(window).height() * 0.4 | 0 );
+			console.log('here');
 		} else {
 			
 			$('.parallax-window.low').height(500);
@@ -80,8 +93,6 @@ $("document").ready(function($) {
 	});
 
 	// On large devices, starts the nav, transparent & Scroll to top button
-	var amountScrolled = 300;
-
 	$(function(){
 		$(document).scroll(function() {
     		if ($(document).scrollTop() > $(document).height()/55) {
@@ -90,7 +101,7 @@ $("document").ready(function($) {
     			$("nav").addClass('transparent');
     		}
 
-	    	if ( $(window).scrollTop() > amountScrolled ) {
+	    	if ( $(window).scrollTop() > 300 ) {
 	            $('a.back-to-top').fadeIn('slow');
 	        } else {
 	            $('a.back-to-top').fadeOut('slow');
