@@ -76,14 +76,19 @@ figure {
     box-shadow: -7px -7px 9px -6px rgba(0,0,0,0.7);
 }
 
+svg {
+    overflow:visible;
+    position:absolute;
+    padding-top: 2px;
+}
+
 #Home {
-    padding-top: 150px;
+    padding-top: 15%;
 }
 
 #About {
     padding-top: 75px;
     background: #3498db;
-    /*background-color: white;*/
     color: #333;
     position: relative;
 }
@@ -91,14 +96,12 @@ figure {
 #Portfolio {
     padding-top: 75px;
     background: #f39c12;
-    /*background-color: white;*/
     position: relative;
 }
 
 #Contact {
     padding-top: 75px;
     background: #27ae60;
-    /*background-color: white;*/
     position: relative;
 }
 
@@ -107,17 +110,8 @@ figure {
     font-size: 20px;
 }
 
-.navbar-logo {
-    border-radius: 5px 20px 5px;
-    border: 1px solid white;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-size: 33px !important;
-    float:left;
-    padding: 15px 5px 0px 4px;
-    line-height: 20px;
-    height: 52px;
-    width: 52px;
+.big-brand {
+    margin-left: 45px !important;
 }
 
 ul.nav {
