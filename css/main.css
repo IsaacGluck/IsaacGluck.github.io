@@ -393,7 +393,7 @@ input:focus, textarea:focus {
     font-size: 32px;
     color: #bdc3c7;
     padding-left: 30px;
-    padding-top: 40%;
+    padding-top: 50%;
 }
 
 @media(min-width:767px) {
