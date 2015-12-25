@@ -77,8 +77,9 @@ figure {
 }
 
 svg {
-    overflow:visible;
+    overflow:visible !important;
     position:absolute;
+    left: 20px;
     padding-top: 2px;
 }
 
