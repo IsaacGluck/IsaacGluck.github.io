@@ -145,6 +145,10 @@ nav {
     padding: 2px !important;
 }
 
+.act {
+    color: #fff !important;
+}
+
 /* Fix minor Spacing on the side */
 .row {
     margin-right: 0;
@@ -156,31 +160,20 @@ nav {
 
 .navbar-inverse .navbar-brand {
   color: #ffffff;
-  /*color: #bdc3c7;*/
 }
 
 .navbar-inverse .navbar-brand:hover {
   color: #bdc3c7;
-  /*color: white;*/
   background-color: transparent;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #ffffff;
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a:focus {
     color: #bdc3c7;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #bdc3c7;
-    color: white;
-}
-
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #bdc3c7;
-  color: white;
-  background-color: transparent;
+    color: #fff;
 }
 
 .green {

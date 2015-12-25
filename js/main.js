@@ -109,20 +109,43 @@ $('document').ready(function($) {
     }
   });
 
-  // On large devices, starts the nav, transparent & Scroll to top button
+  var activate = function(elem){
+  	['#Home-Link', '#About-Link', '#Portfolio-Link', '#Contact-Link', ].forEach(function(i){
+  		$(i).removeClass('act');
+  	});
+  	$(elem).addClass('act');
+  };
+
+  // Scroll features
   $(function() {
     $(document).scroll(function() {
+    	// Animate nav
       if ($(document).scrollTop() > $(document).height() / 55) {
         $('nav').removeClass('transparent');
       } else {
         $('nav').addClass('transparent');
       }
 
+      // Back to top button
       if ($(window).scrollTop() > 300) {
         $('a.back-to-top').fadeIn('slow');
       } else {
         $('a.back-to-top').fadeOut('slow');
       }
+
+      // Active links with scrolling
+      if($(this).scrollTop() >= $('#Home').position().top){
+        activate('#Home-Link');
+    	}
+    	if($(this).scrollTop() >= $('#About').position().top - 50){
+        activate('#About-Link');
+    	}
+    	if($(this).scrollTop() >= $('#Portfolio').position().top - 50){
+        activate('#Portfolio-Link');
+    	}
+    	if($(this).scrollTop() >= $('#Contact').position().top - 50){
+        activate('#Contact-Link');
+    	}
     });
   });
 
