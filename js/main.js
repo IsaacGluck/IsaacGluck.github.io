@@ -11,14 +11,17 @@ $('document').ready(function($) {
       $('.mobile-message').removeClass('invisible'); // make this a check for mobile/tablet
       $('#About').css('height', 'auto');
     }
-    if ($(window).width() > 897) {
-      $('#under-id').removeClass('under-1 under-2').addClass('under');
+    if ($(window).width() > 1200) {
+    	$('#under-id').removeClass('under under-1 under-2').addClass('under-3');
+    	$('#toCenter').removeClass('text-center');
+    } else if ($(window).width() > 897 && $(window).width() < 1200) {
+      $('#under-id').removeClass('under-1 under-2 under-3').addClass('under');
       $('#toCenter').removeClass('text-center');
     } else if ($(window).width() < 897 && $(window).width() > 768) {
-      $('#under-id').removeClass('under under-2').addClass('under-1');
+      $('#under-id').removeClass('under under-2 under-3').addClass('under-1');
       $('#toCenter').removeClass('text-center');
     } else if ($(window).width() < 769) {
-      $('#under-id').removeClass('under under-1').addClass('under-2');
+      $('#under-id').removeClass('under under-1 under-3').addClass('under-2');
       $('#toCenter').addClass('text-center');
       $('#me').insertBefore($('#first-mobile'));
     }

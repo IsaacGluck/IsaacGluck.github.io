@@ -207,10 +207,8 @@ nav {
 }
 
 .header {
-    /*padding-top: 50px;*/
     font-family: 'BebasNeue', sans-serif;
     font-size: 60px;
-    /*text-decoration: underline;*/
 }
 
 #Portfolio div div div h1 {
@@ -405,6 +403,14 @@ input:focus, textarea:focus {
     color: #bdc3c7;
     padding-left: 30px;
     padding-top: 80%;
+}
+
+.under-3 {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 150px;
+    color: #bdc3c7;
+    padding-left: 30px;
+    padding-top: 10%;
 }
 
 @media(min-width:767px) {
