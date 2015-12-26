@@ -9,13 +9,18 @@ $('document').ready(function($) {
     if ($(window).width() < 992) {
       $('#Portfolio').css('height', '1300px');
       $('.mobile-message').removeClass('invisible'); // make this a check for mobile/tablet
+      $('#About').css('height', 'auto');
     }
     if ($(window).width() > 897) {
       $('#under-id').removeClass('under-1 under-2').addClass('under');
+      $('#toCenter').removeClass('text-center');
     } else if ($(window).width() < 897 && $(window).width() > 768) {
       $('#under-id').removeClass('under under-2').addClass('under-1');
+      $('#toCenter').removeClass('text-center');
     } else if ($(window).width() < 769) {
       $('#under-id').removeClass('under under-1').addClass('under-2');
+      $('#toCenter').addClass('text-center');
+      $('#me').insertBefore($('#first-mobile'));
     }
   });
 
@@ -103,7 +108,6 @@ $('document').ready(function($) {
     if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
       $('#ios-notice').removeClass('hidden');
       $('.parallax-window.low').height($(window).height() * 0.4 | 0);
-      console.log('here');
     } else {
       $('.parallax-window.low').height(500);
     }

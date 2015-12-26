@@ -70,14 +70,16 @@ body {
     position: fixed !important;
 }
 
-figure {
-    -webkit-box-shadow: -7px -7px 9px -6px rgba(0,0,0,0.7);
-    -moz-box-shadow: -7px -7px 9px -6px rgba(0,0,0,0.7);
-    box-shadow: -7px -7px 9px -6px rgba(0,0,0,0.7);
+.shadow {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #me {
     width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 svg {
