@@ -76,15 +76,15 @@ figure {
     box-shadow: -7px -7px 9px -6px rgba(0,0,0,0.7);
 }
 
+#me {
+    width: 70%;
+}
+
 svg {
     overflow:visible !important;
     position:absolute;
     left: 1.5%;
     padding-top: 2px;
-}
-
-#Home {
-    /*padding-top: 15%;*/
 }
 
 #About {
