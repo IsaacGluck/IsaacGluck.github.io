@@ -22,8 +22,8 @@ $('document').ready(function($) {
       $('#toCenter').removeClass('text-center');
     } else if ($(window).width() < 769) {
       $('#under-id').removeClass('under under-1 under-3').addClass('under-2');
-      $('#toCenter').addClass('text-center');
-      $('#me').insertBefore($('#first-mobile'));
+      $('.to-center').addClass('text-center');
+      $('#me').insertBefore($('#second-mobile'));
     }
   });
 
@@ -160,12 +160,10 @@ $('document').ready(function($) {
   // Looks better on phones when you click on a nav item, the drop down disappears
   $(function() {
     $('.toggle-drop').click(function() {
-      // $('#isaac-nav').toggleClass('in');
       $('#isaac-nav').collapse('hide');
     });
 
     $('.big-brand').click(function() {
-      // $('#isaac-nav').removeClass('in');
       $('#isaac-nav').collapse('hide');
     });
   });
