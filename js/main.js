@@ -55,60 +55,33 @@ $('document').ready(function($) {
   $('img[src$="city-dark.jpg"]').addClass('fixd');
 
   // Smooth scrolling
+  var scroll = function(key, val) {
+  	$(key).click(function() {
+      $('body, html').stop().animate({
+        scrollTop: $(val).offset().top
+      }, 1750);
+      return false;
+    });
+  };
+
   $(function() {
-    $('.big-brand').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('body').offset().top
-      }, 1500);
-      return false;
-    });
-
-    $('#Home-Link').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('body').offset().top
-      }, 1500);
-      return false;
-    });
-
-    $('#About-Link').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('#About').offset().top
-      }, 1500);
-      return false;
-    });
-
-    $('#Portfolio-Link').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('#Portfolio').offset().top
-      }, 1500);
-      return false;
-    });
-
-    $('#Contact-Link').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('#Contact').offset().top
-      }, 1500);
-      return false;
-    });
-
-    $('.back-to-top').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('body').offset().top
-      }, 2000);
-      return false;
-    });
-
-    $('.fa-envelope-o').click(function() {
-      $('body, html').stop().animate({
-        scrollTop: $('#Contact').offset().top
-      }, 2000);
-      return false;
-    });
+  	var scrollers = {
+  		'.big-brand': 'body',
+			'#Home-Link': 'body',
+			'#About-Link': '#About',
+			'#Portfolio-Link': '#Portfolio',
+			'#Contact-Link': '#Contact',
+			'.back-to-top': 'body',
+			'.fa-envelope-o': '#Contact'
+  	};
+  	for (var key in scrollers) {
+  		scroll(key, scrollers[key]);
+  	}
   });
 
   // Determines the heights of the parralax image panels
   $(function() {
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+    if (is.mobile() || is.tablet()) {
       $('#ios-notice').removeClass('hidden');
       $('.parallax-window.low').height($(window).height() * 0.4 | 0);
     } else {
@@ -116,44 +89,62 @@ $('document').ready(function($) {
     }
   });
 
-  var activate = function(elem){
+  // Scroll features
+  var activate = function(elem) {
   	['#Home-Link', '#About-Link', '#Portfolio-Link', '#Contact-Link', ].forEach(function(i){
   		$(i).removeClass('act');
   	});
   	$(elem).addClass('act');
   };
 
-  // Scroll features
-  $(function() {
+  var changeAct = function(point, offset) {
+  	if($(document).scrollTop() >= $(point).position().top - offset){
+    	activate(point + '-Link');
+		}
+  };
 
+  var points = {'#Home': 0,
+   '#About': 50,
+   '#Portfolio': 50,
+   '#Contact': 50
+ 	};
+
+ 	var scrollPoints = function() {
+ 		for (var point in points) {
+  		changeAct(point, points[point]);
+  	}
+ 	};
+
+ 	var animateNav = function() {
+ 		if ($(document).scrollTop() > $(document).height() / 55) {
+      $('nav').removeClass('transparent');
+    } else {
+      $('nav').addClass('transparent');
+    }
+ 	};
+
+ 	var backToTop = function(pos,len) {
+ 		if ($(window).scrollTop() > pos) {
+      $('a.back-to-top').fadeIn(len);
+    } else {
+      $('a.back-to-top').fadeOut(len);
+    }
+ 	};
+
+  $(function() {
+  	// run prior to scrolling to highlight current location
+  	scrollPoints();
+  	animateNav();
+  	backToTop(400, 'slow');
     $(document).scroll(function() {
     	// Animate nav
-      if ($(document).scrollTop() > $(document).height() / 55) {
-        $('nav').removeClass('transparent');
-      } else {
-        $('nav').addClass('transparent');
-      }
+    	animateNav();
 
       // Back to top button
-      if ($(window).scrollTop() > 300) {
-        $('a.back-to-top').fadeIn('slow');
-      } else {
-        $('a.back-to-top').fadeOut('slow');
-      }
+      backToTop(400, 'slow');
 
       // Active links with scrolling
-      if($(this).scrollTop() >= $('#Home').position().top){
-        activate('#Home-Link');
-    	}
-    	if($(this).scrollTop() >= $('#About').position().top - 50){
-        activate('#About-Link');
-    	}
-    	if($(this).scrollTop() >= $('#Portfolio').position().top - 50){
-        activate('#Portfolio-Link');
-    	}
-    	if($(this).scrollTop() >= $('#Contact').position().top - 50){
-        activate('#Contact-Link');
-    	}
+      scrollPoints();
     });
   });
 
