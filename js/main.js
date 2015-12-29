@@ -90,61 +90,62 @@ $('document').ready(function($) {
   });
 
   // Scroll features
-  var activate = function(elem) {
-  	['#Home-Link', '#About-Link', '#Portfolio-Link', '#Contact-Link', ].forEach(function(i){
-  		$(i).removeClass('act');
-  	});
-  	$(elem).addClass('act');
-  };
+  var scrollFeatures = {
+  	activate:function(elem) {
+  		['#Home-Link', '#About-Link', '#Portfolio-Link', '#Contact-Link', ].forEach(function(i){
+  			$(i).removeClass('act');
+  		});
+  		$(elem).addClass('act');
+  	},
 
-  var changeAct = function(point, offset) {
-  	if($(document).scrollTop() >= $(point).position().top - offset){
-    	activate(point + '-Link');
-		}
-  };
+  	changeAct:function(point, offset) {
+  		if($(document).scrollTop() >= $(point).position().top - offset){
+  			scrollFeatures.activate(point + '-Link');
+  		}
+  	},
 
-  var points = {'#Home': 0,
-   '#About': 50,
-   '#Portfolio': 50,
-   '#Contact': 50
- 	};
+	  scrollPoints:function() {
+	  	var points = {'#Home': 0,
+	  		'#About': 50,
+	  		'#Portfolio': 50,
+	  		'#Contact': 50
+	  	};
+	  	for (var point in points) {
+	  		scrollFeatures.changeAct(point, points[point]);
+	  	}
+	  },
 
- 	var scrollPoints = function() {
- 		for (var point in points) {
-  		changeAct(point, points[point]);
-  	}
- 	};
+	  animateNav:function() {
+	  	if ($(document).scrollTop() > $(document).height() / 55) {
+	  		$('nav').removeClass('transparent');
+	  	} else {
+	  		$('nav').addClass('transparent');
+	  	}
+	  },
 
- 	var animateNav = function() {
- 		if ($(document).scrollTop() > $(document).height() / 55) {
-      $('nav').removeClass('transparent');
-    } else {
-      $('nav').addClass('transparent');
-    }
- 	};
-
- 	var backToTop = function(pos,len) {
- 		if ($(window).scrollTop() > pos) {
-      $('a.back-to-top').fadeIn(len);
-    } else {
-      $('a.back-to-top').fadeOut(len);
-    }
- 	};
+	  backToTop:function(pos,len) {
+	  	if ($(window).scrollTop() > pos) {
+	  		$('a.back-to-top').fadeIn(len);
+	  	} else {
+	  		$('a.back-to-top').fadeOut(len);
+	  	}
+	  }
+	};
 
   $(function() {
   	// run prior to scrolling to highlight current location
-  	scrollPoints();
-  	animateNav();
-  	backToTop(400, 'slow');
+  	scrollFeatures.scrollPoints();
+  	scrollFeatures.animateNav();
+  	scrollFeatures.backToTop(400, 'slow');
     $(document).scroll(function() {
     	// Animate nav
-    	animateNav();
+    	scrollFeatures.animateNav();
 
       // Back to top button
-      backToTop(400, 'slow');
+      scrollFeatures.backToTop(400, 'slow');
 
       // Active links with scrolling
-      scrollPoints();
+      scrollFeatures.scrollPoints();
     });
   });
 
