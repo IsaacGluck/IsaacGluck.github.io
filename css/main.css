@@ -66,6 +66,14 @@ body {
     background-color: #222;
 }
 
+noscript {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 80px;
+    margin-left: 10px;
+}
+
 .fixd {
     position: fixed !important;
 }
