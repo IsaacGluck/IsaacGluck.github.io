@@ -25,6 +25,9 @@ $('document').ready(function($) {
       $('.to-center').addClass('text-center');
       $('#me').insertBefore($('#second-mobile'));
     }
+    if (is.iphone()){
+    	$('.mobile-small').css('font-size', '20px');
+    }
   });
 
   // resizing
