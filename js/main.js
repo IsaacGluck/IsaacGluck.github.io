@@ -119,7 +119,7 @@ $('document').ready(function($) {
 	  },
 
 	  animateNav:function() {
-	  	if ($(document).scrollTop() > $(document).height() / 55) {
+	  	if ($(document).scrollTop() > $(document).height() / 47) {
 	  		$('nav').removeClass('transparent');
 	  	} else {
 	  		$('nav').addClass('transparent');
