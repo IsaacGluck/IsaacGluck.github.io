@@ -7,7 +7,7 @@ $('document').ready(function($) {
     $('#Contact').css('min-height', '700px');
     $('#Portfolio').css('min-height', '950px');
     if ($(window).width() < 992) {
-      $('#Portfolio').css('height', '1300px');
+      $('#Portfolio').css('height', '1500px');
       $('.mobile-message').removeClass('invisible'); // make this a check for mobile/tablet
       $('#About').css('height', 'auto');
     }
