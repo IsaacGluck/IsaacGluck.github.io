@@ -116,6 +116,16 @@ svg {
     position: relative;
 }
 
+.liverpool, .liverpool:focus, .liverpool:active, .liverpool:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+.liverpool:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
 .resume, .resume:visited {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 22px;
