@@ -404,7 +404,7 @@ input:focus, textarea:focus {
     font-size: 100px;
     color: #bdc3c7;
     padding-left: 30px; 
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 .under-1 {
@@ -428,7 +428,7 @@ input:focus, textarea:focus {
     font-size: 125px;
     color: #bdc3c7;
     padding-left: 30px;
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 @media(min-width:767px) {
