@@ -34,7 +34,7 @@ $('document').ready(function($) {
   $(function() {
     $(window).resize(function() {
       if ($(window).width() < 992) {
-        $('#Portfolio').css('height', '1600px');
+        $('#Portfolio').css('height', '1800px');
         $('.mobile-message').removeClass('invisible'); // make this a check for mobile/tablet
       } else {
         $('#Portfolio').css('height', $(window).height());
