@@ -162,4 +162,17 @@ $('document').ready(function($) {
       $('#isaac-nav').collapse('hide');
     });
   });
+
+  setTimeout(function() {
+    $('body').addClass('loaded');
+
+    // Animate Logo
+    // var svg = new Walkway({
+    //   selector: '#logo',
+    //   easing: 'easeInOutCubic',
+    //   duration: 3100
+    // }).draw();
+    
+  }, 2200);
+
 });

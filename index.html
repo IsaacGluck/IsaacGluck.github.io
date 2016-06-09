@@ -1,4 +1,11 @@
 <!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
@@ -18,12 +25,14 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:600,400' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/portfolio.min.css">
 
     <!-- JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <!-- G Analytics -->
@@ -38,11 +47,15 @@
     </script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
     <noscript>For full functionality of this page it is necessary to enable JavaScript. For instructions on how to enable JavaScript in your web browser go to <a target="_blank" href="http://www.enable-javascript.com">enable-javascript.com</a></noscript>
+
+
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+
+    </div>
 
     <nav class="navbar navbar-inverse navbar-fixed-top transparent" role="navigation">
       <div class="container-fluid">
@@ -59,6 +72,7 @@
           <!-- SVG Logo -->
           <svg height="53px" width="53px" id="logo" xmlns="http://www.w3.org/2000/svg">
             <g transform='scale(.059 .059)'>
+
               <path fill="transparent" stroke="white" stroke-width="15" d="M875 800 h-600 q-200 0 -200 -200 v-600 h600 q200 0 200 200 z"></path>
               <path fill="#f1c40f" d="M300 650 l100 -500 h50 l-100 500 z"/>
               <path fill="white" d="M150 150 v500 h100 v-500 z"/>
@@ -421,29 +435,17 @@
     <script async src="js/modal.js"></script>
     <script async src="js/collapse.js"></script>
 
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-
     <script async src="./js/verify.min.js"></script>
 
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.0/notify.min.js"></script>
 
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/is_js/0.7.4/is.min.js"></script>
-
-    <script async src="js/main.min.js"></script>
 
     <script async src="http://cdn.jsdelivr.net/walkway/0.0.1/walkway.min.js"></script>
 
-    <!-- Animate Logo -->
-    <script type="text/javascript">
-      'use strict';
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/is_js/0.7.4/is.min.js"></script>
 
-      window.onload = function () {
-        var svg = new Walkway({
-          selector: '#logo',
-          easing: 'easeInOutCubic',
-          duration: 3100
-        }).draw();
-      };
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
