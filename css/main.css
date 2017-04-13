@@ -116,6 +116,34 @@ svg {
     position: relative;
 }
 
+h1.dartmouth {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+path {
+  pointer-events: all;
+}
+
+svg.dartmouth {
+  width: 200px;
+  margin-bottom: -13px;
+  margin-left: 175px;
+  color: #27ae60;
+}
+
+div.dartmouth-surround {
+  background-color: rgba(255, 0, 0, 0.0);
+  height: 97px;
+  width: 90px;
+  margin-bottom: -13px;
+  display: inline-block;
+}
+
+div.dartmouth-surround:hover {
+  cursor: pointer;
+}
+
 .liverpool, .liverpool:focus, .liverpool:active, .liverpool:visited {
     color: #333;
     text-decoration: none;
@@ -374,15 +402,15 @@ input:focus, textarea:focus {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(51, 51, 51, .5);  
+   color: rgba(51, 51, 51, .5);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(51, 51, 51, .5);  
+   color: rgba(51, 51, 51, .5);
 }
 
-:-ms-input-placeholder {  
-   color: rgba(51, 51, 51, .5);  
+:-ms-input-placeholder {
+   color: rgba(51, 51, 51, .5);
 }
 
 .footer{
@@ -403,7 +431,7 @@ input:focus, textarea:focus {
     font-family: "BebasNeue", sans-serif;
     font-size: 100px;
     color: #bdc3c7;
-    padding-left: 30px; 
+    padding-left: 30px;
     padding-top: 12%;
 }
 
@@ -432,7 +460,7 @@ input:focus, textarea:focus {
 }
 
 @media(min-width:767px) {
-    
+
 
     .transparent {
         background-color: rgba(0, 0, 0, 0.2) !important;
