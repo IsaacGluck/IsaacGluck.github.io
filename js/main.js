@@ -75,7 +75,7 @@ $('document').ready(function($) {
 			'#Portfolio-Link': '#Portfolio',
 			'#Contact-Link': '#Contact',
 			'.back-to-top': 'body',
-			'.fa-envelope-o': '#Contact'
+			'.fa-envelope-square': '#Contact'
   	};
   	for (var key in scrollers) {
   		scroll(key, scrollers[key]);
@@ -172,7 +172,7 @@ $('document').ready(function($) {
     //   easing: 'easeInOutCubic',
     //   duration: 3100
     // }).draw();
-    
+
   }, 2200);
 
 });
