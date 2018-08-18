@@ -1,4 +1,8 @@
 IsaacGluck.github.io
 ====================
 
-My personal website: http://Isaacgluck.com
+My old personal website: http://Isaacgluck.github.io
+
+See the updated version at http://IsaacGluck.com
+
+
